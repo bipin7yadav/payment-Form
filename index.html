@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(126, 214, 218);
+            border: 3px solid black;
+            padding:2px 10px 7px 9px;
+            margin:10px 1px;
+            display: block;
+            box-sizing: border-box;
+            border-spacing: 10px;
+        }
+        h1{
+            text-decoration-line: underline;
+            text-align: center;
+        }
+
+        input[text],
+        input[email],
+        input[number],
+        input[date],
+        select,
+        textarea{
+            width: 100%;
+            text-align: center;
+        }
+
+        h2{
+            text-decoration-line: underline;
+
+        }
+
+        button{
+            border: 1px solid blue;
+            padding: 5px;
+            background-color: rgba(238, 17, 10, 0.925);
+            width: 100%
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+        <p>Name: * <input type="text" placeholder="Bipin Yadav" style="width: 100%;" ></p>
+
+        <p>Gender:  Male<input type="radio" id="gender" value="male"> Female <input type="radio" value="Female"></p>
+
+        <p>Address: <textarea name="Address" id="Address" cols="80" rows="10"></textarea></p>
+
+        <p>Email: <input type="email" name="email" style="width: 100%;" id="email" placeholder="bipinyadav9769@gmail.com"></p>
+
+        <p>Pincode: <input type="number" style="width: 100%;" name="pincode" id="pincode" placeholder="400030"></p>
+
+        <h2>Payment Information</h2>
+
+        <p>Card Type:
+            <select name="card_type" id="card_type" required>
+                <option value="">"-------Select Card Type------</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+
+        <p>Card Number:* <input type="number" style="width: 100%;" name="card-number" id="card-number" placeholder="0000-0000-0000-0000"></p>
+
+        <p>Expiration Date: <input type="date" style="width: 100%;" name="date" id="date"></p>
+        <button>Pay Now</button>
+    </div>
+
+    
+    
+</body>
+</html>
